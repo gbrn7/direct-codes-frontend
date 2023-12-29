@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscription</title>
+
+    <!-- Link Css Bootstrap -->
+    <link rel="stylesheet" href="Assets/Vendor/bootstrap-5.2/css/bootstrap.min.css">
+
+    <!-- Link BoxIcon -->
+    <link rel="stylesheet" href="Assets/Vendor/boxicons-master/css/boxicons.min.css">
+  
+    <!-- Link Remixicon -->
+    <link rel="stylesheet" href="Assets/Vendor/RemixIcon-master/fonts/remixicon.css">
+  
+    <!-- Link Aos -->
+    <link rel="stylesheet" href="Assets/Vendor/aos-2/dist/aos.css">
+  
+    <!-- Link Css Main -->
+    <link rel="stylesheet" href="Assets/Style/videosDetailStyle/main.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    <!-- SideBar Start-->
+    <aside class="sidebar offcanvas-lg offcanvas-start">
+      <div class="d-flex justify-content-end m4 d-block d-lg-block">
+        <!-- Button Hiden -->
+        <button  
+        data-bs-toggle="offcanvas"
+        data-bs-target=".sidebar"
+        class="btn p-0 border-0 fs-4"
+        aria-label="Button Close">
+        <i class="fas fa-close"></i>
+        </button> 
+        <!-- Button Hiden end -->
+      </div>
+      <div class="logo-brand mt-lg-5">
+        <img src="Assets/img/Directcodes..svg" class="img-fluid">
+      </div>
+      <hr>
+      <nav class="menu flex-fill">
+        <div class="section-menu d-flex flex-column align-items-center">
+          <div class="item-wrap">
+            <a href="#" class="item-menu active text-decoration-none" onclick="handClickMenu(this)">
+            <i class='bx bx-home'></i>
+            <p class="">Dashboard</p>
+            </a>
+          </div>
+          <div class="item-wrap">
+            <a href="#" class="item-menu  text-decoration-none" onclick="handClickMenu(this)">
+              <i class='bx bx-heart-circle'></i>
+            <p class="">Favorite</p>
+            </a>
+          </div>
+          <div class="item-wrap">
+            <a href="#" class="item-menu  text-decoration-none" onclick="handClickMenu(this)">
+            <i class='bx bx-camera-movie' ></i>
+            <p class="">My Playlist</p>
+            </a>
+          </div>
+          <div class="item-wrap">
+            <a href="#" class="item-menu  text-decoration-none" onclick="handClickMenu(this)">
+            <i class='bx bxs-credit-card'></i>
+            <p class="">Subscription</p>
+            </a>
+          </div>
+          <div class="item-wrap">
+            <a href="#" class="item-menu  text-decoration-none" onclick="handClickMenu(this)">
+              <i class='bx bx-cog' ></i>
+            <p class="">Account</p>
+            </a>
+          </div>
+          <div class="item-wrap">
+            <a href="#" class="item-menu  text-decoration-none" onclick="handClickMenu(this)">
+            <i class='bx bx-log-out' ></i>
+            <p class="">Log Out</p>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </aside>
+    <!-- Sidebar End -->
+
+    <!-- Header Start -->
+    <section class="header">
+      <div class="container-fluid header-wrapper">
+        <div class="row">
+          <div class="col-lg-12 col-12 header-wrap d-flex justify-content-end">
+            <div class="col-xl-10 col-lg-9 col-12 content-wrap d-flex  align-items-center">
+              <button aria-controls="sidebar"
+              data-bs-toggle="offcanvas" 
+              data-bs-target=".sidebar"
+              aria-label="Button Hamburger"
+              class="sidebarOffCanvas mb-5 btn p-0 d-flex d-lg-none">
+              <i class="fa-solid fa-bars"></i>
+              </button>
+              <div class="nav-content">
+                <div class="profile-wrapper d-flex gap-3 align-items-center">
+                  <div class="img-wrapper col-lg-1">
+                    <img src="Assets/img/profile.jpg" alt="" class="img-fluid">
+                  </div>
+                  <div class="desc">
+                    <p class="m-0 r-1">Hello Simon</p>
+                    <p class="m-0 r-2">Have a Great Day</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Header End -->
+    
+    <!-- Content Start -->
+    <section class="content">
+      <div class="container-fluid content-wrapper">
+        <div class="row justify-content-end content-wrap mt-3">
+            <div class="col-lg-10">
+              <div class="row embed-wrap justify-content-center">
+                <iframe class="embed " src="https://www.youtube.com/embed/Azfj1efPAH0" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-lg-10 description-wrapper">
+                  <div class="title">
+                    <p class="m-0">Position absolute and responsive layouts
+                    </p>
+                  </div>
+                  <div class="description">
+                    <p class="fw-semibold fs-6">2022 - Jhon LBF</p>
+                  </div>
+                </div>
+                <div class="row justify-content-center playlist-wrapper">
+                  <a href="#" class="d-flex text-decoration-none justify-content-center">
+                    <div class="col-lg-10 playlist-wrap p-3 rounded-5">
+                      <div class="row playlist">
+                        <p class="m-0 text-center">Postition absolute  and responsive layouts - Parts 1</p>
+                      </div>
+                      </div>
+                  </a>
+                  <a href="#" class="d-flex text-decoration-none justify-content-center">
+                    <div class="col-lg-10 playlist-wrap p-3 rounded-5">
+                      <div class="row playlist">
+                        <p class="m-0 text-center">Postition absolute  and responsive layouts - Parts 2</p>
+                      </div>
+                      </div>
+                  </a>
+                  <a href="#" class="d-flex text-decoration-none justify-content-center">
+                    <div class="col-lg-10 playlist-wrap p-3 rounded-5">
+                      <div class="row playlist">
+                        <p class="m-0 text-center">Postition absolute  and responsive layouts - Parts 3</p>
+                      </div>
+                      </div>
+                  </a>
+                  <a href="#" class="d-flex text-decoration-none justify-content-center">
+                    <div class="col-lg-10 playlist-wrap selected p-3 rounded-5">
+                      <div class="row playlist">
+                        <p class="m-0 text-center">Postition absolute  and responsive layouts - Parts 4</p>
+                      </div>
+                      </div>
+                  </a>
+                  <a href="#" class="d-flex text-decoration-none justify-content-center">
+                    <div class="col-lg-10 playlist-wrap p-3 rounded-5">
+                      <div class="row playlist">
+                        <p class="m-0 text-center">Postition absolute  and responsive layouts - Parts 5</p>
+                      </div>
+                      </div>
+                  </a>
+                  <a href="#" class="d-flex text-decoration-none justify-content-center">
+                    <div class="col-lg-10 playlist-wrap p-3 rounded-5">
+                      <div class="row playlist">
+                        <p class="m-0 text-center">Postition absolute  and responsive layouts - Parts 6</p>
+                      </div>
+                      </div>
+                  </a>
+                  <a href="#" class="d-flex text-decoration-none justify-content-center">
+                    <div class="col-lg-10 playlist-wrap p-3 rounded-5">
+                      <div class="row playlist">
+                        <p class="m-0 text-center">Postition absolute  and responsive layouts - Parts 7</p>
+                      </div>
+                      </div>
+                  </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- Content End -->
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- JS -->
+    <Script src="Assets/Js/script.js"></Script>
+</body>
+</html>
